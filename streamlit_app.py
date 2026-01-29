@@ -20,7 +20,7 @@ if conv_type == "Fahrenheit to Celsius":
     output = convertFtoC(temp_input)
     st.metric(label="Converted Temperature", value=output)
 
-    elif conv_type == "Celsius to Fahrenheit":
+elif conv_type == "Celsius to Fahrenheit":
     output = convertCtoF(temp_input)
     st.metric(label="Converted Temperature", value=output)
 
