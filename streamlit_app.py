@@ -18,11 +18,11 @@ conv_type = st.radio("Select conversion type:",options=
 
 if conv_type == "Fahrenheit to Celsius":
     output = convertFtoC(temp_input)
-    st.metric(label="Converted Temperature", value=output)
+    st.metric(label="Converted Temperature", value=f"{output:.2f}")
 
 elif conv_type == "Celsius to Fahrenheit":
     output = convertCtoF(temp_input)
-    st.metric(label="Converted Temperature", value=output)
+    st.metric(label="Converted Temperature", value=f"{output:.2f}")
 
 if "history" not in st.session_state:
     st.session_state["history"] = []
