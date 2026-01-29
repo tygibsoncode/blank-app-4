@@ -27,7 +27,7 @@ elif conv_type == "Celsius to Fahrenheit":
 if "history" not in st.session_state:
     st.session_state["history"] = []
 
-    st.session_state.history.append((temp_input, conv_type))
+    st.session_state.history.append((temp_input, conv_type, output))
     print(st.session_state.history)
 
     st.divider()
